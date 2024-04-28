@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/home.dart';
 
 
 void main()
@@ -9,9 +10,7 @@ void main()
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    int days = 70;
-    double tt = 45.2;
-    String name = "Hello Bro";
+
     double Pi = 3.14;
     bool flag = true;
     num temp = 30.15; // Can accept any number (double,int)
@@ -19,11 +18,7 @@ class MyApp extends StatelessWidget {
     final list = [1,2,3,45,5,68]; // We can Add Or remove element inside this
 
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Text("Welcome to $days days of Flutter course!!! $name"),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
